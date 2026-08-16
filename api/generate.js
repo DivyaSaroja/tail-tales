@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     const prompt = `Write a short, fun ${genre} story (around 150 words) told from the first-person perspective of a dog named ${dogName}, a ${breed}. The dog has a quirky habit: ${habit}. Make it playful and full of personality.`;
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
